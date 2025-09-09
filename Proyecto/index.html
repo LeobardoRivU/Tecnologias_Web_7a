@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreria Tulipan</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/floreria.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Logo Florería</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html"><i class="bi bi-flower3"></i> Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobreNosotros.html"><i class="bi bi-info-circle-fill"></i> Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html"><i class="bi bi-envelope-fill"></i> Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i> Cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Iniciar o Registrarse</a></li>
+                                <li><a class="dropdown-item" href="#">Salir</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i> Carrito</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide ">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="../img/fuera.jpg" class="d-block w-100" alt="img1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="display-3 fw-bold">Ramos que enamoran</h1>
+                            <p class="fs-5">Descubre nuestra colección de flores frescas y personalizadas.</p>
+                            <a href="#" class="btn btn-light btn-lg mt-3">Ver catálogo</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/floreriajpg.jpg" class="d-block w-100" alt="img2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="display-3 fw-bold">Tu momento especial</h1>
+                            <p class="fs-5">Diseños únicos para bodas, eventos y celebraciones.</p>
+                            <a href="#" class="btn btn-light btn-lg mt-3">¡Contáctanos!</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/flower3.jpg" class="d-block w-100" alt="img3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="display-3 fw-bold">Frescura garantizada</h1>
+                            <p class="fs-5">Directo del campo a tu hogar. Calidad en cada pétalo.</p>
+                            <a href="#" class="btn btn-light btn-lg mt-3">Explora ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="productosDestacados" class="container-fluid py-5">
+            <h2 class="text-center display-5 mb-5">Nuestros Arreglos Destacados</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../img/ramos/ramo3.jpg" class="card-img-top" alt="Arreglo de Rosas">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ramo "Primavera"</h5>
+                            <p class="card-text text-muted">Clásico ramo de rosas rojas.</p>
+                            <p class="fs-4 fw-bold">$450</p>
+                            <button class="btn btn-primary w-100"><i class="bi bi-cart-plus-fill"></i> Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../img/ramos/ramo4.jpg" class="card-img-top card-img-fixed-height" alt="No">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Canasta "Celebración"</h5>
+                            <p class="card-text text-muted">Una mezcla vibrante para cumpleaños.</p>
+                            <p class="fs-4 fw-bold">$600</p>
+                            <button class="btn btn-primary w-100"><i class="bi bi-cart-plus-fill"></i> Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="../img/ramos/ramo2.jpg" class="card-img-top" alt="Arreglo de Girasoles">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Arreglo "Otoño"</h5>
+                            <p class="card-text text-muted">Hermosos girasoles para iluminar el día.</p>
+                            <p class="fs-4 fw-bold">$550</p>
+                            <button class="btn btn-primary w-100"><i class="bi bi-cart-plus-fill"></i> Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comoFunciona" class="container py-5">
+            <h2 class="text-center display-5 mb-5">¡Es muy fácil! Pide tus flores en 3 pasos</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-search display-1 text-success"></i>
+                    <h3 class="mt-3">1. Explora el catálogo</h3>
+                    <p>Navega por nuestros arreglos y elige tu favorito.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-whatsapp display-1 text-success"></i>
+                    <h3 class="mt-3">2. Envía tu solicitud</h3>
+                    <p>Haz clic en el botón de WhatsApp y envíanos tu pedido.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <i class="bi bi-truck display-1 text-success"></i>
+                    <h3 class="mt-3">3. Recibe tus flores</h3>
+                    <p>Recibe tu arreglo fresco en la comodidad de tu hogar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center display-5 mb-5">Lo que dicen nuestros clientes</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm p-4">
+                            <p class="fst-italic">"El ramo fue simplemente espectacular. El servicio por WhatsApp fue rápido y muy atento."</p>
+                            <p class="fw-bold text-end">- Ana L.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card shadow-sm p-4">
+                            <p class="fst-italic">"Me encantó la canasta. La recomiendo totalmente, son muy profesionales."</p>
+                            <p class="fw-bold text-end">- Carlos R.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center text-lg-start text-muted text-white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Conecta con nosotros en redes sociales:</span>
+            </div>
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Florería Tulipán
+                        </h6>
+                        <p>
+                            Tu tienda online de flores frescas y arreglos florales. Llevamos la belleza de la naturaleza a la puerta de tu hogar.
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Navegación
+                        </h6>
+                        <p><a href="index.html" class="text-reset">Inicio</a></p>
+                        <p><a href="catalogo.html" class="text-reset">Catálogo</a></p>
+                        <p><a href="sobreNosotros.html" class="text-reset">Sobre Nosotros</a></p>
+                        <p><a href="#!" class="text-reset">Contacto</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Información
+                        </h6>
+                        <p><a href="#!" class="text-reset">Política de Privacidad</a></p>
+                        <p><a href="#!" class="text-reset">Términos y Condiciones</a></p>
+                        <p><a href="#!" class="text-reset">Preguntas Frecuentes</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="bi bi-geo-alt-fill me-3"></i> Dirección de la Florería</p>
+                        <p><i class="bi bi-envelope-fill me-3"></i> contacto@tulipan.com</p>
+                        <p><i class="bi bi-phone-fill me-3"></i> +12 345 67890</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="text-center p-4">
+            © 2025 Copyright:
+            <a class="text-reset fw-bold" href="#">FloreriaTulipan.com</a>
+        </div>
+    </footer>
+</body>
+</html>
